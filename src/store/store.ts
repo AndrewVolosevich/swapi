@@ -5,7 +5,7 @@ import {peoplesReducer} from "./peoples/peoplesReducer";
 
 
 const rootReducer = combineReducers({
-    peoples: peoplesReducer
+    peoples: peoplesReducer,
 })
 
 export const store = createStore(

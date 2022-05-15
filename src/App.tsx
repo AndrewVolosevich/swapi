@@ -1,12 +1,12 @@
-import {Provider} from "react-redux";
+import {Provider, useDispatch} from "react-redux";
 import {store} from "./store/store";
-import Peoples from "./components/Peoples/Peoples";
+import 'antd/dist/antd.css';
+import AppController from "./components/AppController/AppController";
 
 const App = () => {
   return (
     <Provider store={store}>
-      Test
-        <Peoples />
+      <AppController />
     </Provider>
   );
 }
